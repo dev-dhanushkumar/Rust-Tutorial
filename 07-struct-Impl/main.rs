@@ -1,9 +1,8 @@
-use mystruct::{test_create_person, test_name_check, create_book_tuble};
+use mystruct::{test_create_person, test_name_check, create_book_tuble,test_area,test_rect};
 
 use crate::mystruct::impl_student_test;
 
 pub mod mystruct;
-
 
 fn main() {
     // println!("Hello, world!");
@@ -26,4 +25,7 @@ fn main() {
     test_name_check();
     create_book_tuble();
     impl_student_test();
+    test_area();
+    println!();
+    test_rect();
 }
