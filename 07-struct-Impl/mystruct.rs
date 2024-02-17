@@ -86,3 +86,32 @@ pub fn  impl_student_test(){
     my_student.addmark(40);
     println!("{:?}", my_student);
 }
+
+
+///Refactorig with tuble
+pub fn test_area() {
+    let rect = (3,3);
+    println!("The area of the rectangle {} square pixels.", area(rect));
+}
+
+fn area(dimn:(u32,u32)) -> u32 {
+    dimn.0 * dimn.1
+}
+
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+pub fn test_rect () {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 10,
+    };
+
+    println!("The area of the rectangle is {} square pixels.", area1(&rect1));
+    
+}
+
+fn area1 (rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
+}
